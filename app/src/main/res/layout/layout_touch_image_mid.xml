@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/polka" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Initial Position:"
+            android:id="@+id/txtI"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Final Position:"
+            android:id="@+id/txtF"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/txtI"
+            android:layout_alignLeft="@+id/txtI"
+            android:layout_alignStart="@+id/txtI" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Quadrant:"
+            android:id="@+id/txtQ"
+            android:layout_below="@+id/txtD"
+            android:layout_alignLeft="@+id/txtD"
+            android:layout_alignStart="@+id/txtD"
+            android:layout_marginTop="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Difference:"
+            android:id="@+id/txtDiff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/txtQ"
+            android:layout_alignStart="@+id/txtQ"
+            android:layout_marginBottom="45dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Direction:"
+            android:id="@+id/txtD"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/txtF"
+            android:layout_alignStart="@+id/txtF" />
+    </RelativeLayout>
+
+</LinearLayout>
